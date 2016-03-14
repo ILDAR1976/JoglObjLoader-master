@@ -277,6 +277,7 @@ public class GLModel{
 		for (int i = 0; i < materials.Textures.size();i++){
 			glTxt = ((MtlLoader.mtexture)materials.Textures.get(i)).glTexture;
 			glTxt.enable(gl);
+			glTxt.bind(gl);
 		}
 		
 		for (int i=0;i<faces.size();i++) {
